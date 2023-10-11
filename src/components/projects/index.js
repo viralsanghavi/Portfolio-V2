@@ -10,10 +10,9 @@ const Projects = () => {
           title="PORTFOLIO"
           subTitle="Each project is a unique piece of development 🧩"
         />
-        <div className="bg-white rounded-2xl p-5 shadow-md flex gap-10">
+        <div className="bg-white rounded-2xl p-5 shadow-md flex flex-col lg:flex-row items-center lg:items-start gap-10">
           <div
             style={{
-              minWidth: 530,
               maxWidth: 530,
               height: 360,
             }}
@@ -21,9 +20,8 @@ const Projects = () => {
           >
             <Image
               src="/viral.jpg"
-              className="translate-y-0 hover:-translate-y-[50%] transition-all ease-in-out transform duration-[8000ms]"
-              width={530}
-              height={360}
+              className="translate-y-0 hover:-translate-y-[50%] w-[530px]  h-[360px] transition-all ease-in-out transform duration-[8000ms]"
+              fill
             />
           </div>
           <div className="flex flex-col w-full items-center justify-center">

@@ -4,19 +4,19 @@ import Container from "../container";
 
 const Banner = () => {
   return (
-    <section className="h-screen bg-bg" id="home">
+    <section className="lg:h-screen h-auto bg-bg py-24" id="home">
       <Container>
-        <div className="w-full h-full flex flex-col items-center justify-center gap-40">
-          <div className="flex items-center gap-32 justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center lg:gap-20 gap-5 ">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-5 lg:gap-32 justify-center">
             <div className="max-w-lg w-full">
-              <h1 className="font-bold text-6xl my-6 leading-sm">
-                Full-Stack Developer 🚀
+              <h1 className="font-bold text-4xl lg:text-6xl my-6 text-center lg:text-left leading-sm">
+                Modern Full-Stack Developer 🚀
               </h1>
-              <p className="text-xl font-normal leading-md">
+              <p className="text-xl font-normal leading-md text-center lg:text-left">
                 Hi, I&apos;m Viral Sanghavi. A passionate Full Stack Developer
                 based in Mumbai, India. 📍
               </p>
-              <div className="flex items-center gap-6 my-6">
+              <div className="flex items-center gap-6 my-6 justify-center lg:justify-start">
                 <Image
                   src="/linked-in.svg"
                   alt="linkedin"
@@ -48,8 +48,8 @@ const Banner = () => {
               />
             </div>
           </div>
-          <div className="flex items-center justify-start self-start gap-10">
-            <span className="border-r border-solid border-blue-500 pr-10">
+          <div className="flex flex-col lg:flex-row items-center justify-start self-center lg:self-start gap-10">
+            <span className="lg:border-r lg:border-b-0 border-b border-solid border-blue-500 lg:pr-10 pb-3 lg:pb-0">
               Tech Stack
             </span>
             <div className="flex items-center gap-5 hover:-translate-y-2 transition-all duration-500">

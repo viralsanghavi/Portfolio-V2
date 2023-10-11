@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#2d2e32] py-12 ">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row items-center gap-5">
           <h3 className="text-white font-bold text-lg">
             Copyright © 2023. All rights are reserved
           </h3>
