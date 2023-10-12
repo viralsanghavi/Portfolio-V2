@@ -13,16 +13,28 @@ const Footer = () => {
             Copyright © 2023. All rights are reserved
           </h3>
           <div className="flex items-center gap-6">
-            <LinkedInComponent
-              width={32}
-              height={32}
-              className="cursor-pointer text-white hover:scale-125 transition-all duration-500"
-            />
-            <GithubComponent
-              width={32}
-              height={32}
-              className="cursor-pointer text-white hover:scale-125 transition-all duration-500"
-            />
+            <a
+              target="_blank"
+              referrerPolicy="no-referrer"
+              href="https://www.linkedin.com/in/vsanghavi3/"
+            >
+              <LinkedInComponent
+                width={32}
+                height={32}
+                className="cursor-pointer text-white hover:scale-125 transition-all duration-500"
+              />
+            </a>
+            <a
+              target="_blank"
+              referrerPolicy="no-referrer"
+              href="https://github.com/viralsanghavi"
+            >
+              <GithubComponent
+                width={32}
+                height={32}
+                className="cursor-pointer text-white hover:scale-125 transition-all duration-500"
+              />
+            </a>
           </div>
         </div>
       </Container>

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Container from "../container";
+import LinkedInComponent from "@/assets/icons/linked-in";
+import GithubComponent from "@/assets/icons/github";
 
 const Banner = () => {
   return (
@@ -17,20 +19,28 @@ const Banner = () => {
                 based in Mumbai, India. 📍
               </p>
               <div className="flex items-center gap-6 my-6 justify-center lg:justify-start">
-                <Image
-                  src="/linked-in.svg"
-                  alt="linkedin"
-                  width={32}
-                  height={32}
-                  className="cursor-pointer"
-                />
-                <Image
-                  src="/github.svg"
-                  width={32}
-                  height={32}
-                  alt="git"
-                  className="cursor-pointer"
-                />
+                <a
+                  target="_blank"
+                  referrerPolicy="no-referrer"
+                  href="https://www.linkedin.com/in/vsanghavi3/"
+                >
+                  <LinkedInComponent
+                    width={32}
+                    height={32}
+                    className="cursor-pointer text-black hover:scale-125 transition-all duration-500"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  referrerPolicy="no-referrer"
+                  href="https://github.com/viralsanghavi"
+                >
+                  <GithubComponent
+                    width={32}
+                    height={32}
+                    className="cursor-pointer text-black hover:scale-125 transition-all duration-500"
+                  />
+                </a>
               </div>
             </div>
             <div
@@ -52,14 +62,49 @@ const Banner = () => {
             <span className="lg:border-r lg:border-b-0 border-b border-solid border-blue-500 lg:pr-10 pb-3 lg:pb-0">
               Tech Stack
             </span>
-            <div className="flex items-center gap-5 hover:-translate-y-2 transition-all duration-500">
-              <Image src="/menu.svg" width={50} height={50} alt="react" />
-              <Image src="/menu.svg" width={50} height={50} alt="html" />
-              <Image src="/menu.svg" width={50} height={50} alt="css" />
-              <Image src="/menu.svg" width={50} height={50} alt="javascript" />
-              <Image src="/menu.svg" width={50} height={50} alt="AWS" />
-              <Image src="/menu.svg" width={50} height={50} alt="Next" />
-              <Image src="/menu.svg" width={50} height={50} alt="Vite" />
+            <div className="flex items-center gap-5">
+              <Image
+                src="/html.png"
+                width={50}
+                height={50}
+                alt="react"
+                className=" hover:-translate-y-2 transition-all duration-500"
+              />
+              <Image
+                src="/js.png"
+                width={50}
+                height={50}
+                alt="css"
+                className=" hover:-translate-y-2 transition-all duration-500"
+              />
+              <Image
+                src="/typescript.png"
+                width={50}
+                height={50}
+                alt="javascript"
+                className=" hover:-translate-y-2 transition-all duration-500"
+              />
+              <Image
+                src="/frm.svg"
+                width={100}
+                height={50}
+                alt="AWS"
+                className=" hover:-translate-y-2 transition-all duration-500"
+              />
+              <Image
+                src="/css.svg"
+                width={100}
+                height={50}
+                alt="Next"
+                className=" hover:-translate-y-2 transition-all duration-500"
+              />
+              <Image
+                src="/css-3.png"
+                width={50}
+                height={50}
+                alt="html"
+                className=" hover:-translate-y-2 transition-all duration-500"
+              />
             </div>
           </div>
         </div>
