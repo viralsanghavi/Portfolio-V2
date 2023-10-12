@@ -1,4 +1,6 @@
+import {useState} from "react";
 import HeaderNavigation from "../header-navigation";
+import Modal from "../modal";
 
 const Header = () => {
   return (
