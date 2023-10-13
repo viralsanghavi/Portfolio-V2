@@ -62,7 +62,7 @@ const Banner = () => {
             <span className="lg:border-r lg:border-b-0 border-b border-solid border-blue-500 lg:pr-10 pb-3 lg:pb-0">
               Tech Stack
             </span>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center flex-wrap justify-center gap-5">
               <Image
                 src="/html.png"
                 width={50}
