@@ -4,6 +4,7 @@ import Heading from "../heading";
 import {db} from "../../../firebase";
 import {useEffect, useState} from "react";
 import {collection, getDocs, addDoc} from "firebase/firestore/lite";
+import ImageContainer from "../image-container";
 
 const Projects = () => {
   const [projects, setProjects] = useState();
@@ -40,24 +41,14 @@ const Projects = () => {
           subTitle="Each project is a unique piece of development 🧩"
         />
         {projects?.map(
-          ({project_name, photo_url, url, description, tech_stack}) => (
+          ({project_name, photo_url, url, description, tech_stack}, index) => (
             <div
-              className="bg-white rounded-2xl p-5 shadow-md flex flex-col lg:flex-row items-center lg:items-start gap-10 mb-4"
+              className={`bg-white rounded-2xl p-5 shadow-md hover:shadow-lg flex flex-col ${
+                index % 2 == 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+              } items-center lg:items-start gap-10 mb-16`}
               key={project_name}
             >
-              <div
-                style={{
-                  maxWidth: 530,
-                  height: 360,
-                }}
-                className="relative w-full rounded-2xl overflow-hidden gap-8 shadow-md"
-              >
-                <Image
-                  src={photo_url ?? "/viral.jpg"}
-                  className="translate-y-0 hover:-translate-y-[50%] w-[530px]  h-[360px] transition-all ease-in-out transform duration-[8000ms]"
-                  fill
-                />
-              </div>
+              <ImageContainer photoUrl={photo_url} projectUrl={url} />
               <div className="flex flex-col w-full items-center justify-center">
                 <h5 className="font-bold text-lg mb-8">
                   {project_name} <span className="text-sm">(FEB 2023)</span>
