@@ -56,13 +56,15 @@ const Projects = () => {
                 <p className="text-base text-details font-medium text-center mb-4">
                   {description}
                 </p>
-                {tech_stack.map((tech) => (
-                  <div className="" key={tech}>
-                    <div className="mb-4 shadow-md w-fit p-2">
-                      <p className="">{tech}</p>
+                <div className="flex gap-2 flex-wrap items-center justify-center">
+                  {tech_stack.map((tech) => (
+                    <div className="" key={tech}>
+                      <div className="mb-4 shadow-md w-fit p-2">
+                        <p className="">{tech}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
                 <div className="mt-6">
                   <a
                     className="text-lg font-medium text-[#2d2e32] flex items-center cursor-pointer"
