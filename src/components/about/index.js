@@ -9,7 +9,7 @@ const About = () => {
       <Container>
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
           <div
-            className="relative w-full rounded-3xl overflow-hidden"
+            className="relative w-full rounded-3xl overflow-hidden hover:shadow-lg transition-all ease-in-out duration-200"
             style={{
               height: 350,
               maxWidth: 410,
@@ -17,7 +17,7 @@ const About = () => {
             }}
           >
             <Image
-              src="/viral.jpg"
+              src="/workspace.jpg"
               sizes="100vw"
               fill
               objectFit="cover"

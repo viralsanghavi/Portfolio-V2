@@ -12,9 +12,10 @@ const ImageContainer = ({photoUrl, projectUrl}) => {
       className="relative w-full rounded-2xl overflow-hidden gap-8 shadow-md cursor-pointer"
       onClick={handleDivClick}
     >
+      {/* -translate-y-[calc(100vh-30%)] */}
       <img
         src={photoUrl ?? "/viral.jpg"}
-        className="translate-y-0 hover:-translate-y-[calc(100vh-30%)] w-full  h-auto transition-all ease-in-out transform duration-[8000ms]"
+        className="translate-y-0 hover:-translate-y-[50%] w-full  h-auto transition-all ease-in-out transform duration-[8000ms]"
       />
     </div>
   );

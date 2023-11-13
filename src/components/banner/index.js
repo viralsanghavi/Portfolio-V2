@@ -3,7 +3,7 @@ import React from "react";
 import Container from "../container";
 import LinkedInComponent from "@/assets/icons/linked-in";
 import GithubComponent from "@/assets/icons/github";
-
+import {motion} from "framer-motion";
 const Banner = () => {
   return (
     <section className="lg:h-screen h-auto bg-bg py-24" id="home">
